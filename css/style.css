@@ -1,0 +1,90 @@
+:root {
+    --black: #000000;
+    --blackRGB: 0, 0, 0;
+    --blanco: #ffffff;
+    --fondo: #181818;
+    --fondoContenido: #222222;
+    --fondoInput: #3a3a3a;
+    --btnPrincipal: #be5c00;
+    --btnPrincipalHover: #cc6300;
+    --fontPrincipal: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontPrincipal);
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(var(--blackRGB), 0.5);
+    background-color: var(--fondoContenido);
+    color: var(--blanco);
+}
+
+.contenedor h1 {
+    text-align: center;
+}
+
+.contenedor__div {
+    margin: 10px 0;
+
+}
+
+#longitud {
+    padding: 5px;
+    background-color: var(--fondoInput);
+    color: var(--blanco);
+    border: 0px;
+}
+
+#longitud:focus {
+    outline: none;
+}
+
+.btnGenerar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--btnPrincipal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnGenerar:hover {
+    background-color: var(--btnPrincipalHover);
+}
+
+.mostrar {
+    margin-top: 20px;
+}
+#password {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: var(--fondoInput);
+    color: var(--blanco);
+}
+
+#password:focus {
+    border-color: var(--blanco);
+}
