@@ -5,38 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Generador de Contraseña</title>
-  <link rel="preload" href="css/normalize.css" as="style">
-  <link rel="stylesheet" href="css/normalize.css">
-  
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Audiowide&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="contenedor">
-    <h1>Generador de Contraseña</h1>
+    <h1 class="contenedor__h1">Generador de Contraseña</h1>
     <div class="contenedor__div">
       <label for="longitud">Longitud de la contraseña:</label>
       <input type="number" id="longitud" value="8">
     </div>
     <div class="contenedor__div">
-      <input type="checkbox" id="agregarMinusculas">
+      <input type="checkbox" class="contenedor__checkbox" id="agregarMinusculas">
       <label for="agregarMinusculas">Incluir letras minúsculas</label>
     </div>
     <div class="contenedor__div">
-      <input type="checkbox" id="agregarMayusculas">
+      <input type="checkbox" class="contenedor__checkbox" id="agregarMayusculas">
       <label for="agregarMayusculas">Incluir letras mayúsculas</label>
     </div>
     <div class="contenedor__div">
-      <input type="checkbox" id="agregarNumeros">
+      <input type="checkbox" class="contenedor__checkbox" id="agregarNumeros">
       <label for="agregarNumeros">Incluir números</label>
     </div>
     <div class="contenedor__div">
-      <input type="checkbox" id="agregarSimbolos">
+      <input type="checkbox" class="contenedor__checkbox" id="agregarSimbolos">
       <label for="agregarSimbolos">Incluir caracteres especiales</label>
     </div>
     <input type="button" value="Generar" class="btnGenerar" id="btnGenerar">
     <div class="mostrar">
-
       <input type="text" id="password">
     </div>
   </div>
